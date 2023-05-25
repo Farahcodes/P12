@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+main {
+  display: flex;
+  min-height: calc(100vh - (40px + 10px * 2));
+  /* Calcul : window height - header ( which is : logo height + header padding ) */
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0 0 15px;
+}
+
+h1 span {
+  color: red;
+}
+
+.Dashboard {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.Dashboard .flex {
+  display: flex;
+}
+
+.Dashboard .flex.gap {
+  gap: 30px;
+}
+
+.Dashboard .flex.between {
+  justify-content: space-between;
+}
+
+.Dashboard .flex.column {
+  flex-direction: column;
+}
+
+.motd {
+  font-size: 12px;
+  margin: 0 0 30px;
+}
+
+@media (min-width: 1440px) {
+  main {
+    display: flex;
+    min-height: calc(100vh - (56px + 20px * 2));
+    /* Calcul : window height - header ( which is : logo height + header padding ) */
+  }
+
+  h1 {
+    font-size: 48px;
+    margin: 0 0 25px;
+  }
+
+  .Dashboard {
+    margin: 60px 0;
+  }
+
+  .motd {
+    font-size: 18px;
+    margin: 0 0 60px;
+  }
+}
