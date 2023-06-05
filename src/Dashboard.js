@@ -1,11 +1,15 @@
+import Card from './components/Card';
+
 function Dashboard() {
   return (
     <div className="Dashboard">
       <div className="header">
         <h1>Hello {'username'}</h1>
-        <p className="motd">
-          Congratulations! You reached yesterday's goal! 👏
-        </p>
+        <p className="motd">{'motd'}</p>
+        <Card keyName="calorieCount" keyValue={2600} />
+        <Card keyName="proteinCount" keyValue={2600} />
+        <Card keyName="carbohydrateCount" keyValue={2600} />
+        <Card keyName="lipidCount" keyValue={2600} />
       </div>
     </div>
   );
