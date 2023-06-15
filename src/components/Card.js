@@ -28,21 +28,21 @@ export default function Card(props) {
       ? {
           icon: <ProIcon />,
           unit: 'g',
-          name: 'Proteines',
+          name: 'Proteins',
           bgClass: 'bgPro',
         }
       : props.keyName === 'carbohydrateCount'
       ? {
           icon: <CarIcon />,
           unit: 'g',
-          name: 'Glucides',
+          name: 'Carbs',
           bgClass: 'bgCar',
         }
       : props.keyName === 'lipidCount'
       ? {
           icon: <LipIcon />,
           unit: 'g',
-          name: 'Lipides',
+          name: 'Lipids',
           bgClass: 'bgLip',
         }
       : {

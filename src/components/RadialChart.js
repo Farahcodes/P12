@@ -85,7 +85,7 @@ export default function RadialChart(props) {
       .attr('text-anchor', 'middle');
     textCenter
       .append('tspan')
-      .text('de votre')
+      .text('of your')
       .attr('x', chartMidWidth)
       .attr('y', chartMidHeight + 26)
       .style('font-size', '16px')
@@ -94,7 +94,7 @@ export default function RadialChart(props) {
       .attr('text-anchor', 'middle');
     textCenter
       .append('tspan')
-      .text('objectif')
+      .text('goal')
       .attr('x', chartMidWidth)
       .attr('y', chartMidHeight + 52)
       .style('font-size', '16px')

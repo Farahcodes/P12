@@ -203,7 +203,7 @@ export default function BarChart(props) {
     // Legend
     currentBarChart
       .append('text')
-      .text('Activité quotidienne')
+      .text('Daily activity')
       .attr('x', 32)
       .attr('y', 32)
       .style('font-size', '15px')
@@ -219,7 +219,7 @@ export default function BarChart(props) {
       .attr('fill', '#282D30');
     currentBarChart
       .append('text')
-      .text('Poids (kg)')
+      .text('Weight (kg)')
       .attr('x', 540)
       .attr('y', 32)
       .style('font-size', '14px')
@@ -235,7 +235,7 @@ export default function BarChart(props) {
       .attr('fill', '#E60000');
     currentBarChart
       .append('text')
-      .text('Calories brûlées (kCal)')
+      .text('Burned calories (kCal)')
       .attr('x', 656)
       .attr('y', 32)
       .style('font-size', '14px')

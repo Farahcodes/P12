@@ -197,7 +197,7 @@ export default function LineChart(props) {
       .attr('font-weight', 500);
     title
       .append('tspan')
-      .text('Durée moyenne des')
+      .text('Average speed of your')
       .attr('x', 32)
       .attr('y', 40);
     title

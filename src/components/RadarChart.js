@@ -109,18 +109,18 @@ export default function RadarChart(props) {
       .attr('font-weight', 500);
     textValues
       .append('tspan')
-      .text('Intensité')
+      .text('Intensity')
       .attr('x', chartMidWidth)
       .attr('y', 30)
       .attr('text-anchor', 'middle');
     textValues
       .append('tspan')
-      .text('Vitesse')
+      .text('Speed')
       .attr('x', 215)
       .attr('y', 85);
     textValues
       .append('tspan')
-      .text('Force')
+      .text('Strength')
       .attr('x', 215)
       .attr('y', 185);
     textValues
@@ -131,7 +131,7 @@ export default function RadarChart(props) {
       .attr('text-anchor', 'middle');
     textValues
       .append('tspan')
-      .text('Energie')
+      .text('Energy')
       .attr('x', 5)
       .attr('y', 185);
     textValues
