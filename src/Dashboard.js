@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ReactElement } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import Card from './components/Card';
@@ -13,7 +13,7 @@ import {
   getDataActi,
   getDataSess,
   getDataPerf,
-} from './mocks/Api';
+} from './api/Api';
 
 export default function Dashboard() {
   const [data, setData] = useState();
@@ -43,10 +43,8 @@ export default function Dashboard() {
     <div className="Dashboard">
       <div className="content">
         <h1>
-          Bonjour{' '}
-          <span>
-            {data?.dataUser.userInfos.firstName ?? 'Invité'}
-          </span>
+          Hello{' '}
+          <span>{data?.dataUser.userInfos.firstName ?? 'Guest'}</span>
         </h1>
         <p className="motd">
           Congratulations ! You reached yesterday's goal!👏
